@@ -39,19 +39,9 @@ In the oposite, option 2 and 3 have the advantages to live under the same URL as
 
 |                | Features                    | Comments |
 |----------------|-----------------------------|----------|
-| Penny          | Inspect and modify pod data | Build as a developper tool, but usable as UI.        |
-|                | Inspect and modify pod data | The UI may seems complexe for non-technical users        |
-|----------------|-----------------------------|----------|
-| Oh-my-pod      | Inspect and modify pod data | Similar to Pod-browser, unmaintained         |
-|                | Contact |          |
-|----------------|-----------------------------|----------|
-| Pod-Browser    | Inspect and modify pod data | Simple UI intended for non-technical users        |
-|                | Contact |          |
-|                | Bookmarks |          |
-|----------------|-----------------------------|----------|
-| Pod-homepage   | Profile page                            |  Not compatible with CSS for now        |
-|                | Bookmarks                            | But can be a good start for Pod based CSS UI         |
-|                | Blog                            | Not possible to modify pod's data for now         |
-|----------------|-----------------------------|----------|
+| Penny          | Inspect and modify pod data | Build as a developper tool, but usable as UI.  <br/>  The UI may seems complexe for non-technical users        |
+| Oh-my-pod      | Inspect and modify pod data <br/> Contact| Similar to Pod-browser, unmaintained         |
+| Pod-Browser    | Inspect and modify pod data <br/> Contact<br/> Bookmarks| Simple UI intended for non-technical users        |
+| Pod-homepage   | Profile page   <br/> Bookmarks <br/> Blog                               |  Not compatible with CSS for now <br/>  But can be a good start for Pod based CSS UI   <br/> Not possible to modify pod's data for now   |
 
 
