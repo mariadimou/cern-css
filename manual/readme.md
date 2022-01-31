@@ -14,6 +14,7 @@ of the following external pod UI:
  - [Penny](https://penny.vincenttunru.com/)
  - [Pod browser](https://podbrowser.inrupt.com) ( ⚠ privacy addons might break the app )
 
+Enter the URL of the CERN's CSS instance: https://css.app.cern.ch and login with your credentials
 
 ## III. Use a solid app
 
