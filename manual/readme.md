@@ -2,74 +2,56 @@
 
 # Using CSS with a User Interface
 
-CSS is a simple pod and ID provider, it doesn't has an UI.
+CSS is a simple pod and ID provider, it doesn't has an UI that allows the user to interact with their pods.
 
-But it is possible to "plug" an UI to penny through the creation
-of a "recipe"
+Their is 3 options to have an UI on a CSS pod:
 
-A recipe design a configuration file for CSS profite from
-CSS components.js extenssibility
+  1. using an external UI app
+  2. extend CSS using components.js dependency injection framework with a UI
+  3. uploading a UI in the pod 
 
-To use it with a UI, two options are available:
- - create a custom "recipe" ( need def. ) with an integrated UI
- - use the UI as an external app
+![](./assets/UI.jpg)
 
+Options 1 is the more stable solution for now, but it has the disavantage to have the pod UI on a different URL than the CSS instance, which can be confusing for the user.
 
-## external VS internal UI
-
-- UI and CSS under same URL
-
-- Doesn't work out of the box. Need to create a new "recipe" to integrate the UI to CSS 
+In the oposite, option 2 and 3 have the advantages to live under the same URL as the CSS instance instance. Unfortunatly:
+  - option 2 is only available with penny UI and is still buggy. To make it work with a UI other than penny, one needs to create a special CSS config file and resolve conflict that could be created between CSS and the UI, which might required a bit of work.
+  - option 3 no solution yet for CSS, a solution exist with NSS and could be ported to CSS
 
 
-### UI external app
-
-A few app are available to explore the content:
-
-![[edit](./assets/fig_0.jpg?edit)](./assets/fig_0.jpg)
-
-  - Penny:
-    - inspect data, modify, add and delet
-    build as a developper tools for debuggin[https://forum.solidproject.org/t/new-developer-tool-app-penny/3837]
-    but suitable for standard use
-
-    https://gitlab.com/vincenttunru/penny
-    https://penny.vincenttunru.com/
 
 
-  - PodBrowser
-    - inspect data, modify, add and delet
-    - + contacts & bookmarks
 
-    https://github.com/inrupt/pod-browser
-    https://pod-browser.vercel.app/
+|                | Location*    | Author(s)       | Actively maintained    | Source code URL                                                     | Example URL                     |
+|----------------|--------------|-----------------|------------------------|---------------------------------------------------------------------|---------------------------------|
+| Pod-Browser    | External     | Inrupt          | Yes                    | https://github.com/inrupt/pod-browser                               | https://podbrowser.inrupt.com/  |
+| Oh-my-pod      | External     | Empathy         | No ( since dec. 2020 ) | https://github.com/empathyco/solid-oh-my-pod                        | https://ohmypod.netlify.com/    |
+| Penny          | External     | Vincent Tunru   | Yes                    | https://gitlab.com/vincenttunru/penny                               | https://penny.vincenttunru.com/ |
+| Penny-recipe   | Solid-Server | Vincent Tunru   | Yes                    | https://github.com/solid/community-server-recipes/tree/main/penny   |                                 |
+| Mashlib-recipe | Solid-Server | Solid community | Yes                    | https://github.com/solid/community-server-recipes/tree/main/mashlib |                                 |
+| Pod-homepage   | Pod          | Angelo Veltens  | Yes                    | https://gitlab.com/angelo-v/pod-homepage                            | https://angelo.veltens.org/     |
 
 
-   - solidos
-    - inspect data, modify, add and delet
-    - contacts
-    - + task management
-    - + chat
-    - + public profile page
-    - + host a static homepage
-     NSS default front end
-     lot's of UI issue raised in github
-     currently rebuilding the UI
+*See locations on the above illustration
 
-    https://github.com/solid/solidos
-    https://solidos.solidcommunity.net/
 
-   - oh-my-pod ( unmaintained since dec. 2020 )
-    - inspect data, modify, add and delet
-    - contact
-    - profile page
-    https://ohmypod.netlify.com/
-    https://github.com/empathyco/solid-oh-my-pod
+## Features
 
-  - https://gitlab.com/angelo-v/pod-homepage
+|                | Features                    | Comments |
+|----------------|-----------------------------|----------|
+| Penny          | Inspect and modify pod data | Build as a developper tool, but usable as UI.        |
+|                | Inspect and modify pod data | The UI may seems complexe for non-technical users        |
+|----------------|-----------------------------|----------|
+| Oh-my-pod      | Inspect and modify pod data | Similar to Pod-browser, unmaintained         |
+|                | Contact |          |
+|----------------|-----------------------------|----------|
+| Pod-Browser    | Inspect and modify pod data | Simple UI intended for non-technical users        |
+|                | Contact |          |
+|                | Bookmarks |          |
+|----------------|-----------------------------|----------|
+| Pod-homepage   | Profile page                            |  Not compatible with CSS for now        |
+|                | Bookmarks                            | But can be a good start for Pod based CSS UI         |
+|                | Blog                            | Not possible to modify pod's data for now         |
+|----------------|-----------------------------|----------|
 
-TODO: get ligne of code of each project
 
-### Integrated UI
-
- - penny 

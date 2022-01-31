@@ -35,7 +35,7 @@ Login to okd at paas.cern.ch
 
   ![](./imgs/select_dep.png)
 
- 3. On the right teardown "Actions" menu
+ 3. On the right teardown "Actions" menu, select "Add storage"
 
    ![](./imgs/add_storage.png)
 
@@ -45,7 +45,10 @@ Login to okd at paas.cern.ch
 
  5. Enter the path where you want the PV to be mounted and Save
 
-    *for example `/var/css_storage/`*
+   It should correspond to the path specified on you CSS's npm start script.
+   For example,
+   Fill the form with the value `/var/css_storage/`   if the start script of the CSS instance is
+   `npm start -- ... -f /var/css_storage/`
 
 ## Option 2: with `oc` command line
 
