@@ -1,7 +1,7 @@
 
 This repository contains valuable information intended for CERN users in using/creating CSS solid pod. 
 
- - [CERN's CSS instance](https://cern-test-css.app.cern.ch)
+ - [CERN's CSS instance](https://css.app.cern.ch)
  - [CERN's CSS user manual](./manual/readme.md)
  - [List of CSS available UI](./manual/ui.md)
  - [Devops Script](./devops/create_app.sh) : Easily create a CSS instance in CERN Openshift paas
