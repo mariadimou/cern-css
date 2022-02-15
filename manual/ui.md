@@ -2,6 +2,8 @@
 
 # Using CSS with a User Interface
 
+## 3 type of UIs for CSS
+
 CSS is a simple pod and ID provider, it doesn't has an UI that allows the user to interact with their pods.
 
 Their is 3 options to have an UI on a CSS pod:
@@ -12,6 +14,8 @@ Their is 3 options to have an UI on a CSS pod:
 
 ![](./assets/UI.jpg)
 
+## current state
+
 Options 1 is the more stable solution for now, but it has the disavantage to have the pod UI on a different URL than the CSS instance, which can be confusing for the user.
 
 In the oposite, option 2 and 3 have the advantages to live under the same URL as the CSS instance instance. Unfortunatly:
@@ -19,7 +23,7 @@ In the oposite, option 2 and 3 have the advantages to live under the same URL as
   - option 2 is only available with penny UI and is still buggy. To make it work with a UI other than penny, one needs to create a special CSS config file and resolve conflict that could be created between CSS and the UI, which might required a bit of work.
   - option 3 no solution yet for CSS, a solution exist with NSS and could be ported to CSS ( see Pod-homepage bellow ). Also, to allow a UI to run inside a Pod, the Pod need to be configured to interpret html and javascript. This can be a security issue, as it can allow scammers to create phishing webpage with the pod provider URL.
 
-
+## Available UIs
 
 
 
